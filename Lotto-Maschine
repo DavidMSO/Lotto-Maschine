@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Lotto {
+    private int x;
+    private int eingabe;
+    public Lotto(){
+       eingabe();
+    }
+    public void eingabe(){
+       System.out.println("Willkommen bei David Lotterie. Heute zu Gewinnen gibt es den Hauptgewinn, Angel und Kug-Gel-Schreiber \n Geben sie eine beliebige Zahl ein und freuen sie sich auf ihren Gewinn.");
+       Scanner input = new Scanner (System.in);
+       eingabe = input.nextInt();
+       //int eingabe = (int) (Math.random() * 4);
+       if (eingabe == 1){
+           System.out.println("Sie haben einen Kuh-Gel-Schreiber gewonnen");
+        }
+       else if (eingabe == 2){
+           System.out.println("Sie haben eine Angel gewonnen");
+        }
+       else if (eingabe == 3){
+           System.out.println("Hurra, Sie haben den Hauptgewinn!");
+        }
+       else{
+           System.out.println("Sie haben leider verloren! :-(");
+        }
+    }
+ }
